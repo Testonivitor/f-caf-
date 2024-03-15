@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root{
+    --dark:#1e1c2a;
+    --white:#fff;
+
+}
+
+
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+
+
+.Navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+
+.Navigation.Logo{
+    color: var(--dark);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+.Logo span{
+    color: var(--dark);
+}
+
+
+.Navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+.Navigation ul li a{
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 200;
+    transition: all 0.5s;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.Navigation ul li a:hover{
+    color: #4f3c2a;
+}
+
+
+.Navigation i{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.Menu{
+    cursor: pointer;
+}
+
+
+.Menu .bar{
+    display: block;
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+
+.Menu .bar:nth-child(1)
+.Menu .bar:nth-child(3){
+    background: var(--white);
+}
+
+
+.home{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 105%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+
+.home-text{
+    max-width: 37rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: #1e1c2a;
+    margin-bottom: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    color: #4f3c2a;
+}
+
+
+.home-text p{
+    margin-bottom: 4rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.home-btn{
+    padding: 15px 45px;
+    background: #4f3c2a;
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 300;
+    transition: all 0.5s;
+    font-size: 14px;
+}
+
+
+.home-btn:hover{
+    background: #38240e;
+}
+
+
+.home-img img{
+    width: 100%;    
+}
+
+
+@media (max-width:785px){
+    .Navigation{
+        padding: 18px 20px;
+    }
+
+    .Menu{
+        display: block;
+    }
+
+    .Menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .Menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .Menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .nav-menu.ativo{
+        right: 0;
+    }
+
+
+    nav.item{
+        margin: 16px 0;
+    }
+
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .home-img{
+        margin: 20px;
+    }
+
+}
+
+
+.home .text-h4{
+    font-size: 15px;
+}
+
+
+.home .text-h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+
+.home p{
+    font-size: 15px;
+}
+
+.home-img{
+    width: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
